@@ -12,33 +12,34 @@
 
     <div class="container">
 
-      <h1>Vení al Gym!</h1>
+      <h1>Vení al Gym!💪🏽</h1>
     
       <form>
 
-        <div class="datos-persona">
+        <div>
           
           <fieldset>
   
-            <legend>Datos Personales</legend>
+            <legend>🙋‍♂️Datos Personales👀</legend>
     
             <div class="d_p">
-              <label for="nombre">Nombre: *</label>
-              <input type="text" id="nombre" name="nombre" required>
+              <div class="titulos"><label for="nombre">Nombre: *</label></div>
+              <input class="campos" type="text" id="nombre" name="nombre" required>
             </div>
             
             <div class="d_p">
-              <label for="apellido">Apellido: *</label>
-              <input type="text" id="apellido" name="apellido" required>
+              <div class="titulos"><label for="apellido">Apellido: *</label></div>
+              <input class="campos" type="text" id="apellido" name="apellido" required>
             </div>
            
             <div class="d_p">
-              <label for="documento">Documento: *</label>
-              <input type="number" id="documento" name="documento" required>
+              <div class="titulos"><label for="documento">Documento: *</label></div>
+              <input class="campos" type="number" id="documento" name="documento" required>
             </div>
            
             <div class="d_p">
-              <label for="país">Nacionalidad: *</label>
+              <div class="titulos"><label for="país">Nacionalidad: *</label></div>
+              
               <select name="Nacionalidad" id="país" required>
                 <option disabled selected>- Seleccionar -</option>
                 <option value="Argentina">Argentina</option>
@@ -46,47 +47,47 @@
                 <option value="Uruguaya">Uruguaya</option>
                 <option value="Otra">Otra</option>
               </select>
+              
             </div>
             
     
             <div class="d_p">
-              <label for="descripción">Contanos un poco de vos...</label>
-              <textarea name="descripción" id="descripción" cols="20" rows="2"></textarea>
+              <div class="titulos"><label for="descripción">Contanos un poco de vos...</label></div>
+              <div><textarea name="descripcion" id="descripción" cols="20" rows="2"></textarea></div>
             </div>
     
             
-            <div class="d_p">
-              <p>Sexo: *</p>
-              <div class="sexo_container">
+            <div class="titulos"><p>Sexo: *</p></div>
+            
+            <div class="sexo_container">
                 <input type="radio" id="femenino" name="sexo"   value="femenino">
                 <label for="femenino">Femenino</label>
                 <input type="radio" id="masculino" name="sexo"  value="masculino">
                 <label for="masculino">Masculino</label>
                 <input type="radio" id="otro" name="sexo" value="otro">
                 <label for="otro">Otro</label>
-              </div> 
             </div>
     
           </fieldset>
 
         </div>
         
-        <p class="separacion"> ...........</p>
+        <p class="separacion"> ........... </p>
         
-        <div class="datos-contacto">
+        <div>
 
           <fieldset>
   
-            <legend>Datos de Contacto</legend>
+            <legend>📱Datos de Contacto✉️</legend>
     
             <div class="d_c">
-              <label for="teléfono">Teléfono:</label>
-              <input type="number" id="teléfono" name="teléfono" placeholder="Código de área y número" required>
+              <div class="titulos"><label for="teléfono">Teléfono:</label></div>
+              <input class="campos" type="number" id="teléfono" name="teléfono" placeholder="Código de área y número" required>
             </div>
     
-            <div class="d_c">
-              <label for="email">Dirección de correo electrónico: *</label>
-              <input type="email" id="email" name="mail" placeholder="Ej: mail@gmail.com" required>
+            <div id="correo" class="d_c">
+              <div class="titulos"><label for="email">Dirección de correo electrónico: *</label></div>
+              <input class="campos" type="email" id="email" name="mail" placeholder="Ej: mail@gmail.com" required>
             </div>  
           
   
@@ -94,21 +95,21 @@
 
         </div>
       
-        <p class="separacion"> ...........</p>
+        <p class="separacion"> ........... </p>
         
-        <div class="datos-actividades">
+        <div>
           
           <fieldset>
   
-            <legend>Actividades</legend>
+            <legend>🚴‍♂️Actividades🤸</legend>
     
-            <p>Por favor indicá cuáles actividades te interesan.</p>
+            <p style="margin-left: 5px; font-size: 14px;">Por favor indicá cuáles actividades te interesan.</p>
             
-            <div class="palermo">
-              
-              <p>Sede Palermo:</p>
+            <div>
               
               <div class="palermo_container">
+
+                <p>Sede Palermo:</p>
 
                 <label>
                   <input type="checkbox" id="palermo-basquet" name="actividades" value="basquet">Basquet
@@ -131,11 +132,12 @@
                 
             </div>
     
-            <div class="rosario">
+            <div>
               
-              <p>Sede Rosario:</p>
 
               <div class="rosario_container">
+
+                <p>Sede Rosario:</p>
                
                 <label>
                   <input type="checkbox" id="rosario-basquet" name="actividades" value="basquet"> Basquet
