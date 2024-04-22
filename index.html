@@ -4,14 +4,6 @@
     
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <title>Original</title>
 
@@ -24,142 +16,152 @@
     
       <form>
 
-        <fieldset class="datos-persona">
-  
-          <legend>Datos Personales</legend>
-  
-          <div class="d_p">
-            <label for="nombre">Nombre: *</label>
-            <input type="text" id="nombre" name="nombre" required>
-          </div>
+        <div class="datos-persona">
           
-          <div class="d_p">
-            <label for="apellido">Apellido: *</label>
-            <input type="text" id="apellido" name="apellido" required>
-          </div>
-         
-          <div class="d_p">
-            <label for="documento">Documento: *</label>
-            <input type="number" id="documento" name="documento" required>
-          </div>
-         
-          <div class="d_p">
-            <label for="país">Nacionalidad: *</label>
-            <select name="Nacionalidad" id="país" required>
-              <option disabled selected>- Seleccionar -</option>
-              <option value="Argentina">Argentina</option>
-              <option value="Brasileña">Brasileña</option>
-              <option value="Uruguaya">Uruguaya</option>
-              <option value="Otra">Otra</option>
-            </select>
-          </div>
-          
+          <fieldset>
   
-          <div class="d_p">
-            <label for="descripción">Contanos un poco de vos...</label>
-            <textarea name="descripción" id="descripción" cols="20" rows="2"></textarea>
-          </div>
-  
-          
-          <div>
+            <legend>Datos Personales</legend>
+    
+            <div class="d_p">
+              <label for="nombre">Nombre: *</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
             
-            <div class="d_p"><p>Sexo: *</p></div>
+            <div class="d_p">
+              <label for="apellido">Apellido: *</label>
+              <input type="text" id="apellido" name="apellido" required>
+            </div>
+           
+            <div class="d_p">
+              <label for="documento">Documento: *</label>
+              <input type="number" id="documento" name="documento" required>
+            </div>
+           
+            <div class="d_p">
+              <label for="país">Nacionalidad: *</label>
+              <select name="Nacionalidad" id="país" required>
+                <option disabled selected>- Seleccionar -</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Brasileña">Brasileña</option>
+                <option value="Uruguaya">Uruguaya</option>
+                <option value="Otra">Otra</option>
+              </select>
+            </div>
             
-            <input type="radio" id="femenino" checked name="Género" value="femenino">
-            <label for="femenino">Femenino</label>
-  
-            <input type="radio" id="masculino" name="Género" value="masculino">
-            <label for="masculino">Masculino</label>
-  
-            <input type="radio" id="otro" name="Género" value="otro">
-            <label for="otro">Otro</label>
-  
-          </div>
-  
-        </fieldset>
-  
-        <div class="separacion">
-          <p> ........... </p>
-        </div>
+    
+            <div class="d_p">
+              <label for="descripción">Contanos un poco de vos...</label>
+              <textarea name="descripción" id="descripción" cols="20" rows="2"></textarea>
+            </div>
+    
+            
+            <div class="d_p">
+              <p>Sexo: *</p>
+              <div class="sexo_container">
+                <input type="radio" id="femenino" name="sexo"   value="femenino">
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="masculino" name="sexo"  value="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="otro" name="sexo" value="otro">
+                <label for="otro">Otro</label>
+              </div> 
+            </div>
+    
+          </fieldset>
 
-        <fieldset class="datos-contacto">
-  
-          <legend>Datos de Contacto</legend>
-  
-          <div class="d_c">
-            <label for="teléfono">Teléfono:</label>
-            <input type="number" id="teléfono" name="teléfono" placeholder="Código de área y número" required>
-          </div>
-  
-          <div class="d_c">
-            <label for="email">Dirección de correo electrónico: *</label>
-            <input type="email" id="email" name="mail" placeholder="Ej: mail@gmail.com" required>
-          </div>  
+        </div>
         
+        <p class="separacion"> ...........</p>
+        
+        <div class="datos-contacto">
 
-        </fieldset>
+          <fieldset>
   
-        <div class="separacion">
-          <p> ........... </p>
+            <legend>Datos de Contacto</legend>
+    
+            <div class="d_c">
+              <label for="teléfono">Teléfono:</label>
+              <input type="number" id="teléfono" name="teléfono" placeholder="Código de área y número" required>
+            </div>
+    
+            <div class="d_c">
+              <label for="email">Dirección de correo electrónico: *</label>
+              <input type="email" id="email" name="mail" placeholder="Ej: mail@gmail.com" required>
+            </div>  
+          
+  
+          </fieldset>
+
         </div>
+      
+        <p class="separacion"> ...........</p>
+        
+        <div class="datos-actividades">
+          
+          <fieldset>
+  
+            <legend>Actividades</legend>
+    
+            <p>Por favor indicá cuáles actividades te interesan.</p>
+            
+            <div class="palermo">
+              
+              <p>Sede Palermo:</p>
+              
+              <div class="palermo_container">
+
+                <label>
+                  <input type="checkbox" id="palermo-basquet" name="actividades" value="basquet">Basquet
+                </label>
+                
+                <label>
+                  <input type="checkbox" id="palermo-boxeo" name="actividades" value="boxeo">Boxeo
+                </label> 
+
+                <label>
+                  <input type="checkbox" id="palermo-futbol" name="actividades" value="futbol">Futbol
+                </label>
+
+                <label>
+                  <input type="checkbox" id="palermo-tenis" name="actividades" value="tenis"> Tenis
+                </label>
+                
+              </div> 
+                
+                
+            </div>
+    
+            <div class="rosario">
+              
+              <p>Sede Rosario:</p>
+
+              <div class="rosario_container">
+               
+                <label>
+                  <input type="checkbox" id="rosario-basquet" name="actividades" value="basquet"> Basquet
+                </label>
+
+                <label>
+                  <input type="checkbox" id="rosario-futbol" name="actividades" value="futbol"> Futbol
+                </label>
+                
+                <label>
+                  <input type="checkbox" id="rosario-rugby" name="actividades" value="rugby"> Rugby
+                </label>
+                
+                <label>
+                  <input type="checkbox" id="rosario-voley" name="actividades" value="volley"> Voley
+                </label>
+
+              </div>
+            
+            </div>
+    
+          </fieldset>
+
+        </div>
+  
        
-  
-        <fieldset class="datos-actividades">
-  
-          <legend>Actividades</legend>
-  
-          <div class="d_a" id="Pregunta"><p>Por favor indicá cuáles actividades te interesan.</p></div>
-          
-          <div class="d_a"><p>Sede Palermo:</p></div>
-  
-            
-          <label>
-            <input type="checkbox" name="Palermo_Basket" value="Básket">
-            Básket
-          </label>
-  
-            
-          <label>
-            <input type="checkbox" name="Palermo_Boxeo" value="Boxeo">
-            Boxeo
-          </label>
-  
-          <label>
-            <input type="checkbox" name="Palermo_Fútbol" value="Fútbol">
-            Fútbol
-          </label>
-  
-          <label>
-            <input type="checkbox" name="Palermo_Tenis" value="Tenis">
-            Tenis
-          </label>
-            
-  
-  
-          <div class="d_a"><p>Sede Rosario:</p></div>
-  
-          <label>
-            <input type="checkbox" name="Rosario_Básket" value="Básket">
-            Básket
-          </label>
-  
-          <label>
-            <input type="checkbox" name="Rosario_Fútbol" value="Fútbol">
-            Fútbol
-          </label>
-  
-          <label>
-            <input type="checkbox" name="Rosario_Rugby" value="Rugby">
-            Rugby
-          </label>
-  
-          <label>
-            <input type="checkbox" name="Rosario_Voley" value="Voley">
-            Voley
-          </label>
-          
-  
-        </fieldset>
   
         <div class="condiciones_novedades">
           <input type="checkbox" name="condiciones" value="condiciones" id="condiciones" required >
@@ -175,7 +177,7 @@
         
         
 
-        <div id="botones">
+        <div class="botones">
             <button id="boton_1" type="submit">Inicar afiliación</button>
             <button id="boton_2" type="reset">Restablecer</button>
         </div>
