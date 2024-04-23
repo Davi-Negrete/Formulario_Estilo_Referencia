@@ -226,6 +226,36 @@ body{
 
  }
    
+.campos:focus{
+
+  background-color: #4D6D63;
+
+}
+
+#descripción:focus {
+
+  background-color: #4D6D63;
+
+}
+
+.datos_persona:hover{
+
+  background-color: #A6C1B9;
+
+}
+
+.datos_contacto:hover {
+
+  background-color: #A6C1B9;
+
+}
+
+.datos_actividades:hover {
+
+  background-color: #A6C1B9;
+
+}
+
 @media screen and (max-width:820px) {
 
   .container {
